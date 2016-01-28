@@ -9,47 +9,58 @@
   <a href="javascript:void(0)" 
   onclick="w3_close()"
   class="w3-closenav w3-large">Close &times;</a>
-  <a href="#">Link 1</a>		
-  <a href="#">Link 2</a>		
-  <a href="#">Link 3</a>		
-  <a href="#">Link 4</a>		
-  <a href="#">Link 5</a>		
+  <a href="#">Technology</a>		
+  <a href="#">Sports</a>		
+  <a href="#">News</a>		
+  <a href="#">About</a>				
 </nav>
 
 <div id="main">
 
 <header class="w3-container w3-light-grey">
   <span class="w3-opennav w3-xxlarge" onclick="w3_open()">&#9776;</span>
-  <p> Menu</p>
-  <h1 class="w3-jumbo w3-center">My First W3.CSS Website!</h1>
+  <p id="menu"> Menu</p>
+  <h1 class="w3-jumbo w3-center">Three Links</h1>
 </header>
 
 <div class="w3-container w3-card-2 w3-center w3-indigo">
-  <h1>Movies 2014</h1>
+  <h1>News</h1>
 </div>
 
 <ul class="w3-ul w3-center">
   <li>
-    <h3>Healine 1</h3>
-    <p>The response to the animations was ridiculous.</p>
+    <h3><a href="http://www.nytimes.com">Healine 1</a></h3>
+    <p>
+      <span class="w3-tag w3-small w3-round w3-green w3-center">
+        2 min
+      </span>
+    </p>
   </li>
   <li>
     <h3>Healine 2</h3>
-    <p>Touching, gripping and genuinely well made.</p>
+    <p>
+      <span class="w3-tag w3-small w3-round w3-yellow w3-center">
+        5 min
+      </span>
+    </p>
   </li>
   <li>
     <h3>Healine 3</h3>
-    <p>A huge success for Marvel and Disney.</p>
+    <p>
+      <span class="w3-tag w3-small w3-round w3-red w3-center">
+        7 min
+      </span>
+    </p>
   </li>
 </ul>
 
 <div class="w3-container w3-indigo w3-center w3-xlarge">
-  <h5>Movies 2014</h5>
+  <br></br>
 </div>
 
 
 <footer class="w3-container w3-center w3-light-grey">
-  <p>This is my footer</p>
+  <p>Created by Jeremy Philipp</p>
 </footer>
 
 </div>
@@ -60,11 +71,13 @@ function w3_open() {
   document.getElementsByClassName("w3-sidenav")[0].style.width ="25%";
   document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
   document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+  document.getElementById("menu").style.visibility = "hidden";
 }
 function w3_close() {
   document.getElementById("main").style.marginLeft = "0%";
   document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
   document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+  document.getElementById("menu").style.visibility = "visible";
 }
 </script>
 
